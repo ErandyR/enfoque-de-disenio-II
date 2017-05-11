@@ -1,9 +1,58 @@
-body {
-  background-image: url("../img/Landscape.jpg");
-  image-resolution: from-image;
+*{
+  padding: 0;
+  margin: 0;
 }
-.contenedor {
-  background-image: url("../img/kitten-large.png");
+
+html,
+body,
+section {
   width: 100%;
   height: 100%;
+}
+
+.contenedor {
+  background-image: url("../img/Landscape.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gatitos{
+  width: 60%;
+  content: url("../img/kitten-medium.png")
+}
+
+@media (max-width: 1200px) {
+  .paisaje {
+    background: url("../img/Landscape.jpg");
+  }
+  .gatitos {
+    content: url("../img/kitten-medium.png")
+  }
+
+
+@media (max-width: 768px) {
+  .paisaje {
+    background: url("../img/dawn.png");
+  }
+  .gatitos {
+    content: url("../img/kitten-medium.png")
+  }
+}
+
+@media (max-width: 480px) {
+  .paisaje {
+    background: url("../img/dawn.png");
+  }
+  .gatitos {
+    content: url("../img/kitten-large.png")
+  }
+}
+
+@media (max-width: 320px) {
+  .paisaje {
+    background: url("../img/maxresdefault.jpg");
+  }
+  .gatitos {
+    content: url("../img/kitten-small.png")
+  }
 }
