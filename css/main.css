@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
@@ -11,48 +11,54 @@ section {
 }
 
 .contenedor {
-  background-image: url("../img/Landscape.jpg");
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
-.gatitos{
+
+div {
   width: 60%;
-  content: url("../img/kitten-medium.png")
 }
 
-@media (max-width: 1200px) {
+
+@media (min-width: 769px) {
   .paisaje {
     background: url("../img/Landscape.jpg");
+    background-size: cover;
   }
-  .gatitos {
-    content: url("../img/kitten-medium.png")
-  }
-
-
-@media (max-width: 768px) {
-  .paisaje {
-    background: url("../img/dawn.png");
-  }
-  .gatitos {
+  div {
     content: url("../img/kitten-medium.png")
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width:418px) and (max-width: 768px) {
   .paisaje {
     background: url("../img/dawn.png");
+    background-size: cover;
   }
-  .gatitos {
-    content: url("../img/kitten-large.png")
+  div {
+    content: url("../img/kitten-medium.png")
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 321px) and (max-width: 480px) {
+  .paisaje {
+    background: url("../img/dawn.png");
+    background-size: cover;
+  }
+  div {
+    content: url("../img/kitten-large.png");
+    width: 80%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
   .paisaje {
     background: url("../img/maxresdefault.jpg");
+    background-size: cover;
   }
-  .gatitos {
+  div {
     content: url("../img/kitten-small.png")
   }
 }
